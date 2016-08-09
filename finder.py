@@ -104,7 +104,6 @@ def checkHTTPPort(ip):
         print('An error occurred while creating a socket. Cant check if the HTTP port of {} is open'.format(ip))
         cont = False
 
-    
     if cont:
         error = sockStream.connect_ex((ip, 80))
 
@@ -112,7 +111,6 @@ def checkHTTPPort(ip):
             result = False
 
         sockStream.close()
-
 
     return result
 
